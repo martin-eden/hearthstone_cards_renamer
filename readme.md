@@ -1,7 +1,7 @@
 # Hearthstone card images renamer
 
 Ok, this is code to retrieve Hearthstone cards images and card
-descriptions. Then rename it to nice names and place in directories
+descriptions. And struct them nicely, placing in directories
 named by expansions and class names.
 
 License: GPLv3
@@ -14,21 +14,21 @@ License: GPLv3
 
 * Lua 5.3.4
 
-    `sudo apt install lua5.3` or donwload from official [Lua site]
-    (https://www.lua.org/download.html)
+    `$ sudo apt install lua5.3` or donwload from official 
+    [Lua site](https://www.lua.org/download.html)
 
 * luarocks
 
-    `sudo apt install luarocks` or donwload from official [luarocks site]
-    (https://luarocks.org/)
+    `$ sudo apt install luarocks` or donwload from official 
+    [luarocks site](https://luarocks.org/)
 
 * `luaexpat` rock
 
-    `sudo luarocks install luaexpat`
+    `$ sudo luarocks install luaexpat`
 
 ## Usage
 
-`bash convert.sh`
+`$ bash convert.sh`
 
 It clones repositories with images and with card descritions.
 Then parses XML with card descriptions, creates rename script and
