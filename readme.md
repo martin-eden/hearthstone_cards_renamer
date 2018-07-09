@@ -9,7 +9,7 @@ License: GPLv3
 ## Requirements
 | what | howto get |
 |:---:| --- |
-| Linux| |
+| bash | |
 | git | |
 | Lua 5.3.4 | `$ sudo apt install lua5.3` or donwload from official [Lua site](https://www.lua.org/download.html) |
 | luarocks | `$ sudo apt install luarocks` or donwload from official [luarocks site](https://luarocks.org/) |
