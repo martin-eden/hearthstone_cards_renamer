@@ -49,10 +49,14 @@ local set_names =
     [21] = 'exp - 3 - 2016-04 - whispers of the old gods',
     [23] = 'adv - 4 - 2016-11 - one night in karazhan',
     [25] = 'exp - 4 - 2016-12 - mean streets of gatzetzan',
-    [27] = [[exp - 5 - 2017-04 - journey to un'goro]],
+    [27] = "exp - 5 - 2017-04 - journey to un'goro",
     [1001] = 'exp - 6 - 2017-08 - knights of the frozen throne',
     [1004] = 'exp - 7 - 2017-12 - kobolds and catacombs',
-    [1125] = 'exp - 8 - 2018-03 - witchwood',
+    [1125] = 'exp - 8 - 2018-04 - witchwood',
+    [1127] = 'exp - 9 - 2018-08 - the boomsday project',
+    [1129] = "exp - 10 - 2018-12 - rastaknhan's rumble",
+    [1130] = 'exp - 11 - 2019-04 - rise of shadows',
+    [1158] = 'exp - 12 - 2019-08 - saviors of uldum',
   }
 
 local race_names =
