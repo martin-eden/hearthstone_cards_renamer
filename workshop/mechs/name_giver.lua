@@ -1,19 +1,30 @@
+--[[
+  Generate string name for given function, thread, table or userdata.
+
+  Usage:
+
+    [@]:give_name(<elem>)
+
+  * Main method is named "give_name", not "get_name" because module
+    name is "name_giver".
+]]
+
 return
   {
     names = {},
     counters =
       {
         ['function'] = 0,
-        ['thread'] = 0,
-        ['userdata'] = 0,
-        ['table'] = 0,
+        table = 0,
+        thread = 0,
+        userdata = 0,
       },
     templates =
       {
         ['function'] = 'f_%d',
-        ['thread'] = 'th_%d',
-        ['userdata'] = 'u_%d',
-        ['table'] = 't_%d',
+        table = 't_%d',
+        thread = 'th_%d',
+        userdata = 'u_%d',
       },
     give_name =
       function(self, obj)
@@ -21,7 +32,7 @@ return
           local obj_type = type(obj)
           if not self.counters[obj_type] then
             error(
-              ('Argument type "%s" not supported for counting.'):
+              ('Argument type "%s" is not supported for counting.'):
               format(obj_type),
               2
             )
