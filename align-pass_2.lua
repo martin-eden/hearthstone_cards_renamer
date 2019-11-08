@@ -78,8 +78,8 @@ local map =
   function(value, mapping)
     return
       mapping[value] or
-      mapping[0] or
-      value
+      value or
+      mapping[0]
   end
 
 local remove =
