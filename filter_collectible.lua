@@ -5,7 +5,7 @@ local filter =
     return card_rec.groups.is_collectible
   end
 
-local compile =
+local transform =
   function(cards)
     for i = #cards, 1, -1 do
       if not filter(cards[i]) then
@@ -18,9 +18,9 @@ local compile =
 local convert = request('!.file.convert')
 convert(
   {
-    tool_name = 'Filter collectible cards',
+    action_name = 'Filter collectible cards',
     f_in_name = arg[1],
     f_out_name = arg[2],
-    compile = compile,
+    transform = transform,
   }
 )

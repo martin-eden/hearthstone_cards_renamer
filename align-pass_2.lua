@@ -138,7 +138,7 @@ local represent_card =
     return result
   end
 
-local compile =
+local transform =
   function(t)
     assert_table(t)
     assert(t.type == 'CardDefs')
@@ -152,9 +152,9 @@ local compile =
 local convert = request('!.file.convert')
 convert(
   {
-    tool_name = 'Transform #2',
+    action_name = 'Transform #2',
     f_in_name = arg[1],
     f_out_name = arg[2],
-    compile = compile,
+    transform = transform,
   }
 )

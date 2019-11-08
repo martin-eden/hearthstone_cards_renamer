@@ -59,7 +59,7 @@ local compile =
 local convert = request('!.file.convert')
 convert(
   {
-    tool_name = 'Create rename script',
+    action_name = 'Create rename script',
     f_in_name = arg[1],
     f_out_name = arg[2],
     compile = compile,

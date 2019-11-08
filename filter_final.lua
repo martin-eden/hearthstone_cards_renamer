@@ -13,7 +13,7 @@ local filter =
       (card_rec.groups.set == 'classic')
   end
 
-local compile =
+local transform =
   function(cards)
     for i = #cards, 1, -1 do
       if not filter(cards[i]) then
@@ -26,9 +26,9 @@ local compile =
 local convert = request('!.file.convert')
 convert(
   {
-    tool_name = 'Apply custom filter',
+    action_name = 'Apply custom filter',
     f_in_name = arg[1],
     f_out_name = arg[2],
-    compile = compile,
+    transform = transform,
   }
 )

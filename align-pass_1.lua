@@ -287,7 +287,7 @@ local format_cards =
     return t
   end
 
-local compile =
+local transform =
   function(t)
     local result = rip_translations(t)
     result = format_cards(result)
@@ -298,9 +298,9 @@ local compile =
 local convert = request('!.file.convert')
 convert(
   {
-    tool_name = 'Transform #1',
+    action_name = 'Transform #1',
     f_in_name = arg[1],
     f_out_name = arg[2],
-    compile = compile,
+    transform = transform,
   }
 )

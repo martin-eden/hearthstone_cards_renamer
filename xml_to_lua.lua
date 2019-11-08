@@ -65,7 +65,7 @@ local parse_xml =
 local convert = request('!.file.convert')
 convert(
   {
-    tool_name = 'Convert XML to Lua',
+    action_name = 'Convert XML to Lua',
     f_in_name = arg[1],
     f_out_name = arg[2],
     parse = parse_xml,
