@@ -24,13 +24,13 @@ git clone \
 lua xml_to_lua.lua ./data.src/card_defs/CardDefs.xml ./data.intermediate/card_defs.lua
 lua align-pass_1.lua ./data.intermediate/card_defs.lua ./data.intermediate/card_defs.aligned.1.lua
 lua align-pass_2.lua ./data.intermediate/card_defs.aligned.1.lua ./data.intermediate/card_defs.aligned.2.lua
-lua filter_collectible.lua ./data.intermediate/card_defs.aligned.2.lua ./data.intermediate/card_defs.filtered.collectible.lua
-lua filter_final.lua ./data.intermediate/card_defs.filtered.collectible.lua ./data.intermediate/card_defs.filtered.final.lua
+# lua filter_collectible.lua ./data.intermediate/card_defs.aligned.2.lua ./data.intermediate/card_defs.filtered.collectible.lua
+# lua filter_final.lua ./data.intermediate/card_defs.filtered.collectible.lua ./data.intermediate/card_defs.filtered.final.lua
 
-mv ./data.intermediate/card_defs.filtered.final.lua ./data.final/
+# mv ./data.intermediate/card_defs.filtered.final.lua ./data.final/
 
 lua create_rename_script.lua ./data.intermediate/card_defs.aligned.2.lua ./data.intermediate/rename_script.sh
-lua create_rename_script.lua ./data.intermediate/card_defs.filtered.collectible.lua ./data.intermediate/rename_script.sh
+# lua create_rename_script.lua ./data.intermediate/card_defs.filtered.collectible.lua ./data.intermediate/rename_script.sh
 
 echo "--[ Copying card images before renaming ]"
 cp --recursive ./data.src/card_images/cards/en_US/*.png ./data.final/card_images/
