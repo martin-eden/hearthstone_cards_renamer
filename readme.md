@@ -11,8 +11,8 @@ License: GPLv3
 |:---------:| --------- |
 | bash      |           |
 | git       |           |
-| Lua 5.3.4 | `$ sudo apt install lua5.3` or donwload from official [Lua site](https://www.lua.org/download.html) |
-| luarocks  | `$ sudo apt install luarocks` or donwload from official [luarocks site](https://luarocks.org/) |
+| Lua 5.3.4 | `$ sudo apt install lua5.3` or download from official [Lua site](https://www.lua.org/download.html) |
+| luarocks  | `$ sudo apt install luarocks` or download from official [luarocks site](https://luarocks.org/) |
 | `luaexpat` rock | `$ sudo luarocks install luaexpat` |
 
 ## Installation
